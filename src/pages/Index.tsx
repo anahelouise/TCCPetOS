@@ -6,7 +6,7 @@ const Index = () => {
       {/* Header */}
       <header className="flex items-center justify-between px-8 py-4 border-b">
         <div className="flex items-center gap-2">
-          <img src="/src/img/PetOs.svg" alt="Logo PetOS" className="w-20" />
+          <img src="../src/img/PetOs.svg" alt="Logo PetOS" className="w-20" />
         </div>
         <nav className="hidden md:flex gap-6 text-sm font-medium">
           <a href="#" className="hover:text-primary">Início Rápido</a>
@@ -14,7 +14,7 @@ const Index = () => {
           <a href="#" className="hover:text-primary">Sobre nós</a>
         </nav>
         <a
-          href="/login"
+          href="./login"
           className="px-6 py-2 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90"
         >
           Entrar
@@ -25,7 +25,7 @@ const Index = () => {
       <section className="flex flex-col md:flex-row items-center justify-between flex-1 px-8 py-16 max-w-6xl mx-auto bg-white">
         <div className="max-w-xl text-center md:text-left space-y-4">
           <img
-            src="/src/img/PetOs.svg"
+            src="../src/img/PetOs.svg"
             alt="Logo PetOS"
             className="mx-auto md:mx-0 w-28"
           />
@@ -40,13 +40,13 @@ const Index = () => {
           </p>
           <div className="flex gap-4 justify-center md:justify-start">
             <a
-              href="/login"
+              href="./login"
               className="px-6 py-2 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90"
             >
               Login
             </a>
             <a
-              href="/registrar"
+              href="./registrar"
               className="px-6 py-2 rounded-xl bg-secondary text-black font-semibold hover:bg-secondary/90"
             >
               Criar Conta
@@ -55,7 +55,7 @@ const Index = () => {
         </div>
         <div className="mt-8 md:mt-0 md:ml-8">
           <img
-            src="/src/img/medvet.svg"
+            src="../src/img/medvet.svg"
             alt="Ilustração Veterinária"
             className="w-96"
           />
@@ -81,7 +81,7 @@ const Index = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-16 max-w-6xl mx-auto">
           <div className="text-center space-y-3">
             <img
-              src="/src/img/agendamentoonline.svg"
+              src="../src/img/agendamentoonline.svg"
               alt="Agendamento Online"
               className="mx-auto w-60"
             />
@@ -92,7 +92,7 @@ const Index = () => {
           </div>
           <div className="text-center space-y-3">
             <img
-              src="/src/img/prontuarioeletronico.svg"
+              src="../src/img/prontuarioeletronico.svg"
               alt="Prontuário Eletrônico"
               className="mx-auto w-60"
             />
@@ -103,7 +103,7 @@ const Index = () => {
           </div>
           <div className="text-center space-y-3">
             <img
-              src="/src/img/cotroledevacinação.svg"
+              src="../src/img/cotroledevacinação.svg"
               alt="Controle de Vacinas"
               className="mx-auto w-60"
             />
@@ -125,13 +125,13 @@ const Index = () => {
             </p>
             <div className="flex gap-4 justify-center md:justify-start">
               <a
-                href="/login"
+                href="./login"
                 className="px-6 py-2 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90"
               >
                 Login
               </a>
               <a
-                href="/registrar"
+                href="./registrar"
                 className="px-6 py-2 rounded-xl bg-secondary text-black font-semibold hover:bg-secondary/90"
               >
                 Cadastrar
@@ -139,7 +139,7 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-8 md:mt-0">
-            <img src="/src/img/cta.svg" alt="Ilustração CTA" className="w-80" />
+            <img src="../src/img/cta.svg" alt="Ilustração CTA" className="w-80" />
           </div>
         </div>
       </section>
@@ -151,7 +151,7 @@ const Index = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-8">
           {/* Logo */}
           <img
-            src="/src/img/PetOs.svg"
+            src="../src/img/PetOs.svg"
             alt="Logo PetOS"
             className="mx-auto md:mx-0 w-28"
           />
@@ -203,3 +203,4 @@ const Index = () => {
 };
 
 export default Index;
+
