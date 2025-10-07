@@ -1,4 +1,9 @@
-// Update this page (PetOS Landing Page)
+import PetOs from "./img/PetOs.svg";
+import MedVet from "./img/medvet.svg";
+import Agendamento from "./img/agendamentoonline.svg";
+import Prontuario from "./img/prontuarioeletronico.svg";
+import Vacinas from "./img/controledevacinacao.svg";
+import Cta from "./img/cta.svg";
 import { Facebook, Instagram, Youtube, Twitter, Linkedin } from "lucide-react";
 
 const Index = () => {
@@ -8,7 +13,7 @@ const Index = () => {
       <header className="flex items-center justify-between px-8 py-4 border-b">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="/img/PetOs.svg" alt="Logo PetOS" className="w-20" />
+          <img src={PetOs} alt="Logo PetOS" className="w-20" />
         </div>
 
         {/* Navigation */}
@@ -18,7 +23,6 @@ const Index = () => {
           <a href="#" className="hover:text-primary">Sobre nós</a>
         </nav>
 
-        {/* Login Button */}
         <a
           href="/login"
           className="px-6 py-2 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90"
@@ -30,7 +34,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row items-center justify-between flex-1 px-8 py-16 max-w-6xl mx-auto">
         <div className="max-w-xl text-center md:text-left space-y-4">
-          <img src="/img/PetOs.svg" alt="Logo PetOS" className="mx-auto md:mx-0 w-28" />
+          <img src={PetOs} alt="Logo PetOS" className="mx-auto md:mx-0 w-28" />
 
           <h1 className="text-3xl md:text-4xl font-bold leading-tight">
             Gestão Eficiente para Clínicas Veterinárias
@@ -60,11 +64,7 @@ const Index = () => {
         </div>
 
         <div className="mt-8 md:mt-0 md:ml-8">
-          <img
-            src="/img/medvet.svg"
-            alt="Ilustração Veterinária"
-            className="w-96"
-          />
+          <img src={MedVet} alt="Ilustração Veterinária" className="w-96" />
         </div>
       </section>
 
@@ -89,39 +89,21 @@ const Index = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-16 max-w-6xl mx-auto">
           <div className="text-center space-y-3">
-            <img
-              src="/img/agendamentoonline.svg"
-              alt="Agendamento Online"
-              className="mx-auto w-60"
-            />
+            <img src={Agendamento} alt="Agendamento Online" className="mx-auto w-60" />
             <h3 className="font-semibold text-lg">Agendamento Online</h3>
-            <p className="text-muted-foreground">
-              Agende consultas de maneira rápida e fácil.
-            </p>
+            <p className="text-muted-foreground">Agende consultas de maneira rápida e fácil.</p>
           </div>
 
           <div className="text-center space-y-3">
-            <img
-              src="/img/prontuarioeletronico.svg"
-              alt="Prontuário Eletrônico"
-              className="mx-auto w-60"
-            />
+            <img src={Prontuario} alt="Prontuário Eletrônico" className="mx-auto w-60" />
             <h3 className="font-semibold text-lg">Prontuário Eletrônico</h3>
-            <p className="text-muted-foreground">
-              Acompanhe o histórico de saúde do seu pet.
-            </p>
+            <p className="text-muted-foreground">Acompanhe o histórico de saúde do seu pet.</p>
           </div>
 
           <div className="text-center space-y-3">
-            <img
-              src="/img/controledevacinacao.svg"
-              alt="Controle de Vacinas"
-              className="mx-auto w-60"
-            />
+            <img src={Vacinas} alt="Controle de Vacinas" className="mx-auto w-60" />
             <h3 className="font-semibold text-lg">Controle de Vacinas</h3>
-            <p className="text-muted-foreground">
-              Gerencie as vacinas do seu animal com facilidade.
-            </p>
+            <p className="text-muted-foreground">Gerencie as vacinas do seu animal com facilidade.</p>
           </div>
         </div>
       </section>
@@ -152,7 +134,7 @@ const Index = () => {
           </div>
 
           <div className="mt-8 md:mt-0">
-            <img src="/img/cta.svg" alt="Ilustração CTA" className="w-80" />
+            <img src={Cta} alt="Ilustração CTA" className="w-80" />
           </div>
         </div>
       </section>
@@ -161,46 +143,24 @@ const Index = () => {
       <footer className="py-12 px-4 bg-white border-t border-border">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-8">
-            {/* Logo */}
-            <img src="/img/PetOs.svg" alt="Logo PetOS" className="mx-auto md:mx-0 w-28" />
+            <img src={PetOs} alt="Logo PetOS" className="mx-auto md:mx-0 w-28" />
 
-            {/* Social Icons */}
             <div className="flex gap-4">
-              <a href="https://www.facebook.com/somospetos" className="text-foreground hover:text-primary transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="https://www.instagram.com/usepetos/" className="text-foreground hover:text-primary transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-foreground hover:text-primary transition-colors">
-                <Youtube className="h-5 w-5" />
-              </a>
-              <a href="https://x.com/usepetos" className="text-foreground hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="https://www.linkedin.com/company/oficialpetos/" className="text-foreground hover:text-primary transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
+              <a href="https://www.facebook.com/somospetos" className="text-foreground hover:text-primary transition-colors"><Facebook className="h-5 w-5" /></a>
+              <a href="https://www.instagram.com/usepetos/" className="text-foreground hover:text-primary transition-colors"><Instagram className="h-5 w-5" /></a>
+              <a href="#" className="text-foreground hover:text-primary transition-colors"><Youtube className="h-5 w-5" /></a>
+              <a href="https://x.com/usepetos" className="text-foreground hover:text-primary transition-colors"><Twitter className="h-5 w-5" /></a>
+              <a href="https://www.linkedin.com/company/oficialpetos/" className="text-foreground hover:text-primary transition-colors"><Linkedin className="h-5 w-5" /></a>
             </div>
           </div>
 
-          {/* Bottom Links */}
           <div className="border-t border-border pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-sm text-muted-foreground">
-                © 2025 PetOS. Todos os direitos reservados.
-              </p>
-
+              <p className="text-sm text-muted-foreground">© 2025 PetOS. Todos os direitos reservados.</p>
               <div className="flex gap-6 text-sm">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Política de Privacidade
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Termos de Serviço
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Configurações de Cookies
-                </a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Política de Privacidade</a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Termos de Serviço</a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Configurações de Cookies</a>
               </div>
             </div>
           </div>
@@ -210,4 +170,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Index;
