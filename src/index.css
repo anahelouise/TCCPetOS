@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Backgrounds - Cinza muito claro */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+
+    /* Primary - Verde da sidebar */
+    --primary: 158 64% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Cinza claro */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 15%;
+
+    /* Muted - Cinza médio */
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Accent - Verde claro */
+    --accent: 158 45% 85%;
+    --accent-foreground: 158 64% 25%;
+
+    /* Destructive - Vermelho */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Cores de status e botões */
+    --success: 158 64% 40%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 45 93% 58%;
+    --warning-foreground: 0 0% 15%;
+    
+    --info: 217 91% 60%;
+    --info-foreground: 0 0% 100%;
+
+    /* Borders e inputs */
+    --border: 0 0% 90%;
+    --input: 0 0% 94%;
+    --ring: 158 64% 40%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar - Verde escuro */
+    --sidebar-background: 158 64% 40%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 158 64% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 158 64% 35%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 158 64% 35%;
+    --sidebar-ring: 158 64% 60%;
+  }
+
+  .dark {
+    /* Dark mode - Verde escuro sofisticado */
+    --background: 140 90% 4%;
+    --foreground: 120 30% 95%;
+
+    --card: 140 80% 6%;
+    --card-foreground: 120 25% 92%;
+
+    --popover: 140 85% 5%;
+    --popover-foreground: 120 30% 90%;
+
+    /* Primary - Verde claro no dark mode */
+    --primary: 130 70% 60%;
+    --primary-foreground: 140 90% 8%;
+
+    /* Secondary - Verde escuro médio */
+    --secondary: 140 60% 15%;
+    --secondary-foreground: 120 25% 90%;
+
+    /* Muted - Verde escuro acinzentado */
+    --muted: 140 40% 18%;
+    --muted-foreground: 120 15% 65%;
+
+    /* Accent - Verde médio vibrante */
+    --accent: 130 55% 45%;
+    --accent-foreground: 120 30% 95%;
+
+    /* Destructive - Vermelho para dark mode */
+    --destructive: 0 75% 45%;
+    --destructive-foreground: 120 25% 95%;
+
+    /* Borders e inputs - Verde escuro */
+    --border: 140 50% 20%;
+    --input: 140 45% 22%;
+    --ring: 130 70% 60%;
+
+    /* Sidebar dark mode */
+    --sidebar-background: 140 90% 5%;
+    --sidebar-foreground: 120 25% 85%;
+    --sidebar-primary: 130 70% 55%;
+    --sidebar-primary-foreground: 140 90% 8%;
+    --sidebar-accent: 140 50% 18%;
+    --sidebar-accent-foreground: 120 25% 85%;
+    --sidebar-border: 140 45% 20%;
+    --sidebar-ring: 130 70% 60%;
+
+    /* Gradientes dark mode */
+    --gradient-primary: linear-gradient(135deg, hsl(130 70% 60%), hsl(125 80% 45%));
+    --gradient-secondary: linear-gradient(180deg, hsl(140 80% 6%), hsl(140 70% 10%));
+    --shadow-green: 0 10px 30px -10px hsl(130 70% 60% / 0.4);
+    --glow-green: 0 0 40px hsl(130 80% 50% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
